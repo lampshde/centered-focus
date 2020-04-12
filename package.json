@@ -1,0 +1,38 @@
+{
+  "name": "centered-focus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/bundle.js",
+  "module": "dist/bundle.js",
+  "files": [
+    "/dist"
+  ],
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "nodemon": "^2.0.2",
+    "rollup": "^1.29.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "nodemon --exec npm run build",
+    "build": "rollup --config",
+    "watch:build": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "nodemonConfig": {
+    "ignore": [
+      "dist/*"
+    ],
+    "watch": [
+      "src/"
+    ],
+    "delay": "2500",
+    "ext": "ts,js,json,css,scss"
+  }
+}
